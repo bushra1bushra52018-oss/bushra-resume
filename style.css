@@ -1,0 +1,108 @@
+/*assignment1 Web Development*/
+/*Bushara Al-Harthi */
+/*2310870*/
+
+/* Base for all elemnts in the body to remove default configuration */
+*{margin:0;padding:0;box-sizing:border-box}
+/* this for smooth navgation */
+html{scroll-behavior:smooth}
+
+body{
+  font-family:Arial, sans-serif; background:#f9f6f2; color:#050505; line-height:1.6 
+}
+
+main, header, footer, section{max-width:1200px;margin:0 auto;padding:16px 20px}
+
+main{
+  padding-top:0;
+}
+/* Header */
+.profile-header{padding-top:0} /* keep header flush with top */
+.banner{
+  background-image:url("../media/headerBushrajfif.jfif");
+  background-size:cover; background-position:center;
+  width:100vw; margin-left:calc(-50vw + 50%);
+  height:260px;
+}
+
+a {
+  color: #0000ee; 
+  text-decoration: underline; 
+}
+a:hover {
+  color: #530f24;
+}
+
+/* Avatar + Identity */
+.header-bottom{
+  display:flex; flex-direction:column; align-items:flex-start;
+  gap:6px; margin-top:-100px;
+}
+
+.avatar{
+  width:300px; height:300px; border-radius:50%;
+  border:4px solid #fff; object-fit:cover;
+  position:relative; top:-50px;
+}
+
+/* Titles matching nav-card typography */
+.identity .full-name, .quick-nav-title{
+  font-size:1.8rem; font-weight:600; color:#530f24;
+}
+
+.identity .full-name{ margin-top:-38px; }
+.identity .full-.meta{ margin-top:-3; }
+.quick-nav-title{ margin-bottom:10px; }
+
+/* Quick navigation */
+.quick-nav{margin-top:5px}
+
+.nav-grid{
+  list-style:none; display:grid; gap:14px;
+  grid-template-columns:repeat(4, 1fr);
+}
+.nav-card{
+  display:block; background:#fff; border:1px solid #e4dfd9; border-radius:12px;
+  padding:14px 16px; text-decoration:none; color:rgb(11, 11, 11); font-weight:600; text-align:center;
+  transition:transform .08s ease, box-shadow .08s ease;
+}
+/* to add some creativety when the muse  hover the buttoms */
+.nav-card:hover{transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.06)}
+
+/* Sections */
+section{margin:28px 0; border-left:3px dotted #D8A1BD; padding-left:20px}
+/* for all h2 */
+h2{font-size:1.6rem; margin-bottom:10px; color:#530f24; text-transform:uppercase}
+
+/* Lists */
+.pill-list{list-style:none; display:flex; gap:10px; flex-wrap:wrap}
+.pill-list li{background:#f0e9e0; color:#4a3f35; padding:8px 12px; border-radius:999px}
+.bullet-list{margin-left:18px}
+.bullet-list li{margin:6px 0}
+.card-list{list-style:none; display:grid; gap:10px}
+.card-list li{background:#fff; border:1px solid #ddd; padding:10px; border-radius:6px}
+
+/* Experience */
+.job{margin-bottom:12px}
+
+.experience h3{color:#D8A1BD; margin:5px 0 0}
+
+.date{font-style:italic; color:#D8A1BD}
+
+/* Footer */
+.site-footer{text-align:center; color:#6b5d52; padding-bottom:24px}
+
+/* Responsive */
+@media (max-width: 992px){
+  .nav-grid{grid-template-columns:repeat(2, 1fr)}
+}
+@media (max-width: 576px){
+  .banner{height:220px}
+  .header-bottom{margin-top:-60px}
+  .avatar{width:220px; height:220px; top:-20px}
+  .identity .full-name{font-size:1.6rem}
+  .nav-grid{grid-template-columns:1fr} }
+
+@media (max-width: 768px){
+  .nav-grid{ grid-template-columns: repeat(2, 1fr); }}
+  
