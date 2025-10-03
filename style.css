@@ -8,7 +8,7 @@
 html{scroll-behavior:smooth}
 
 body{
-  font-family:Arial, sans-serif; background:#f9f6f2; color:#050505; line-height:1.6 
+  font-family:Arial, sans-serif; background:#f9f6f2; color:#050505; line-height:1.6 ;
 }
 
 main, header, footer, section{max-width:1200px;margin:0 auto;padding:16px 20px}
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .identity .full-name{ margin-top:-38px; }
-.identity .full-.meta{ margin-top:-3; }
+.identity .meta{ margin-top:-3px; }
 .quick-nav-title{ margin-bottom:10px; }
 
 /* Quick navigation */
@@ -105,4 +105,22 @@ h2{font-size:1.6rem; margin-bottom:10px; color:#530f24; text-transform:uppercase
 
 @media (max-width: 768px){
   .nav-grid{ grid-template-columns: repeat(2, 1fr); }}
+
+@media (max-width: 400px){
+  .banner{
+    height: 180px;  
+  }
+  .header-bottom{
+    margin-top: -40px; 
+  }
+  .avatar{
+    width: 160px;   
+    height: 160px;
+    top: -16px;     
+  }
+  .identity .full-name{
+    font-size: 1.4rem;  
+    margin-top: -6px;   
+  }
+}
   
